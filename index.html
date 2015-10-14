@@ -21,6 +21,8 @@
         <link href="assets/css/animate.css" rel="stylesheet">
         <!--cube portfolio-->
         <link href="assets/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet">
+        <!--pricing css-->
+        <link href="assets/css/pricing.css" rel="stylesheet" type="text/css">
         <!--master slider-->
         <link href="assets/master-slider/style/masterslider.css" rel="stylesheet">
         <link href="assets/master-slider/skins/default/style.css" rel="stylesheet">
@@ -55,10 +57,60 @@
 
                     </ul>
                 </div><!-- END FLEXSLIDER -->
-                <div class="divided20"></div>
-                <p class="scroll-to">
-                    <a href="#about" class="btn btn-danger btn-lg">Register With Us</a>
-                </p>
+                <div class="divided20 "></div>
+                
+                    <div class="col-md-12 col-sm-12 transparent">
+            <form action="/organisations/Results" name="form" class="form-inline" id="form" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>                <div class="form-group">
+                    <select name="data[Organisation][academy_id]" id="academy_id" class="form-control" width="30px">
+<option value="">Select Academy</option>
+<option value="6">ajaya school</option>
+<option value="3">Colleges</option>
+<option value="4">Institutes</option>
+<option value="1">Play Schools</option>
+<option value="2">Schools</option>
+<option value="5">TapuGroups</option>
+</select>               </div>
+                <div class="form-group">
+                    <select name="data[Organisation][board_id]" id="board_id" class="form-control" width="30px">
+<option value="">Select Board</option>
+<option value="3">CBSE</option>
+<option value="7">cbse</option>
+<option value="8">CBSE</option>
+<option value="2">CHSE</option>
+<option value="1">HSC</option>
+<option value="4">ICSE</option>
+<option value="5">PreBoard1</option>
+<option value="6">PreBoard2</option>
+</select>               </div>
+                <div class="form-group">
+                    <select name="data[Organisation][class_id]" id="class_id" class="form-control" width="30px">
+<option value="">Select Class</option>
+<option value="1">1st</option>
+<option value="2">2nd</option>
+<option value="3">3rd</option>
+<option value="4">4th</option>
+<option value="5">5th</option>
+<option value="6">6th</option>
+<option value="7">7th</option>
+<option value="8">8th</option>
+<option value="9">9th</option>
+<option value="10">10th</option>
+<option value="11">Play Group</option>
+<option value="12">Nursery</option>
+<option value="13">LKG</option>
+<option value="14">UKG</option>
+</select>               </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" size="60" placeholder="Type Area or Organisation Name..." onkeyup="showSuggestionList(this);">
+                    <div id="suggestions" style="display:none;"></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-dark-border btn-lg" style="margin-bottom:18px; margin-left:2px;">Search</button>
+                </div>
+            </form> 
+            </div>
+
+                
             </div>
         </section>
 
@@ -103,7 +155,7 @@
                         <div class="text-center">
                             <h2 class="center-title">What We offer</h2>
                             <span class="center-border-line"></span>
-                            <p class="sub-text">We provide u a platform for finding the best schools in your area for your child</p>
+                           
                         </div>
                     </div>
                 </div><!--left title row end-->
@@ -117,31 +169,52 @@
                 <div class="row">
                     <div class="col-sm-4 margin-bottom30">
                         <div class="service-features wow animated fadeIn" data-wow-delay=".2s">
-                            <i class="ion-ios-bolt-outline"></i>
-                            <h3>Choose the right school quickly</h3>
+                            <i class="ion-android-time"></i>
+                            <h3>Schedule</h3>
                             <p>
-                                we help you find out the Schools near your area and let you compare the facilities provided by the school
+                                Get to know  when admission slots opens up for all the listed schools and select the best which suits your need.
                             </p>
                         </div><!--service features-->
                     </div>
                     <div class="col-sm-4 margin-bottom30">
                         <div class="service-features wow animated fadeIn" data-wow-delay=".3s">
-                            <i class="ion-ios-people-outline"></i>
-                            <h3>Focus is on You</h3>
+                            <i class="ion-android-checkbox-outline"></i>
+                            <h3>Subscribe</h3>
                             <p>
-                                We as parents made this site to help you out and this site has been tailor made to suit your needs.
+                                Get Notification from the registered institutes for the admission date.
                             </p>
                         </div><!--service features-->
                     </div>
                     <div class="col-sm-4 margin-bottom30">
                         <div class="service-features wow animated fadeIn" data-wow-delay=".4s">
-                            <i class="ion-ios-monitor-outline"></i>
-                            <h3>From the comfort of your home</h3>
+                            <i class="ion-android-clipboard"></i>
+                            <h3>Registration</h3>
                             <p>
-                                You can screen , apply and connect with schools all in one place , from the comfort of your home. how amazing is that .
+                                Fill in the application form once to get registered to your prefered schools.
                             </p>
                         </div><!--service features-->
                     </div>
+                </div><!--row-->
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-2 margin-bottom30">
+                        <div class="service-features wow animated fadeIn" data-wow-delay=".2s">
+                            <i class="ion-android-pin"></i>
+                            <h3>Events and Achievements</h3>
+                            <p>
+                                Find out whats going on in and around of various inititatives and students achievements of the school.
+                            </p>
+                        </div><!--service features-->
+                    </div>
+                    <div class="col-sm-4 margin-bottom30">
+                        <div class="service-features wow animated fadeIn" data-wow-delay=".3s">
+                            <i class="ion-android-search"></i>
+                            <h3>School serach</h3>
+                            <p>
+                                Search the School as per admission date.
+                            </p>
+                        </div><!--service features-->
+                    </div>
+                    
                 </div><!--row-->
             </div><!--container-->      
         </section><!--about section end-->
@@ -293,7 +366,7 @@
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
                                         <a href="assets/ajax/project1.html" class="cbp-singlePage cbp-l-caption-buttonLeft">more info</a>
-                                        <a href="assets/images/work-2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +383,7 @@
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
                                         <a href="assets/ajax/project2.html" class="cbp-singlePage cbp-l-caption-buttonLeft">more info</a>
-                                        <a href="assets/images/work-8.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +401,7 @@
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
                                         <a href="assets/ajax/project3.html" class="cbp-singlePage cbp-l-caption-buttonLeft">more info</a>
-                                        <a href="assets/images/work-2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -345,7 +418,7 @@
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
                                         <a href="assets/ajax/project4.html" class="cbp-singlePage cbp-l-caption-buttonLeft">more info</a>
-                                        <a href="assets/images/work-2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +435,7 @@
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
                                         <a href="assets/ajax/project5.html" class="cbp-singlePage cbp-l-caption-buttonLeft">more info</a>
-                                        <a href="assets/images/work-6.jpeg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +453,7 @@
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
                                         <a href="assets/ajax/project6.html" class="cbp-singlePage cbp-l-caption-buttonLeft">more info</a>
-                                        <a href="assets/images/work-2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Remind~Me More<br>by Tiberiu Neamu">view larger</a>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -399,7 +472,7 @@
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
                                         <a href="assets/ajax/project7.html" class="cbp-singlePage cbp-l-caption-buttonLeft">more info</a>
-                                        <a href="assets/images/work-2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Generic Apps<br>by Cosmin Capitanu">view larger</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -430,16 +503,16 @@
        <div class="team">
             <div class="container">
                 <div class="text-center wow animated bounceIn" data-wow-delay=".1s">
-                    <h2 class="center-title"> <span class="colored-text">Happy </span> Clients</h2>
+                    <h2 class="center-title"> <span class="colored-text">Testimonials</span> </h2>
                     <span class="center-border-line"></span>
-                    <p class="sub-text">Over 15 satisfied parents</p>
+                    <p class="sub-text">Read what people are saying about us.</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <!-- team slider -->
                         <div class="ms-staff-carousel">
                             <!-- masterslider -->
-                            <div class="master-slider" id="teamslider-parallaxdemo">
+                            <div class="master-slider" id="teamslider">
                                 <div class="ms-slide">
                                     <img src="assets/master-slider/style/blank.gif" data-src="assets/images/team-1.jpg" alt="lorem ipsum dolor sit"/>  
 
@@ -527,7 +600,7 @@
             </div>
         </div><!--team section end-->
          
-      
+     
 
         <div class="numbers-cta">
             <div class="container">

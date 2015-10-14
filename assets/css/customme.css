@@ -53,3 +53,16 @@
     border-radius: 4px;
   }
 
+
+  
+  .transparent {
+	zoom: 1;
+	filter: alpha(opacity = 50);
+	opacity: 0.55;
+	position: absolute;
+}
+
+ .transparent:hover{
+    filter: alpha(opacity = 100);
+	opacity: 0.95;
+}

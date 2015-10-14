@@ -1830,13 +1830,13 @@ LANDING PAGE index.html
 
 /***cube portfolio***/
 .cube-masonry .cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
-  color: #cab630;
-  border-color: #cab630;
+  color: #66CCFF;
+  border-color: #66CCFF;
   cursor: default;
 }
 
 .cube-masonry .cbp-l-filters-buttonCenter .cbp-filter-counter {
-  background-color: #cab630;
+  background-color: #66CCFF;
 }
 
 .cube-masonry .cbp-l-filters-buttonCenter .cbp-filter-counter:before {
@@ -1844,13 +1844,13 @@ LANDING PAGE index.html
 }
 
 .cube-masonry .cbp-l-grid-masonry-projects-title {
-  color: #cab630;
+  color: #66CCFF;
 }
 
 .container .cbp-l-loadMore-button .cbp-l-loadMore-link, .container .cbp-l-loadMore-button .cbp-l-loadMore-button-link {
-  border: 2px solid #cab630;
+  border: 2px solid #66CCFF;
   color: #fff;
-  background-color: #cab630;
+  background-color: #66CCFF;
 }
 .container .cbp-l-loadMore-button .cbp-l-loadMore-link:hover, .container .cbp-l-loadMore-button .cbp-l-loadMore-link:focus, .container .cbp-l-loadMore-button .cbp-l-loadMore-button-link:hover, .container .cbp-l-loadMore-button .cbp-l-loadMore-button-link:focus {
   border-color: #cab630;
