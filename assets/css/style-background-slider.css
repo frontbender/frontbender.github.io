@@ -360,6 +360,16 @@ button {
   color: #fff;
 }
 
+.btn-blue-border {
+  color: #66CCFF;
+  border: 1px solid #66CCFF;
+}
+.btn-blue-border:hover, .btn-blue-border:focus {
+  border-color: #d9534f;
+  background-color: #d9534f;
+  color: #fff;
+}
+
 .btn-light-border {
   color: #fff;
   background-color: transparent;
@@ -1642,6 +1652,11 @@ elements
   margin: 0px;
 }
 .element-row .btn-dark-border {
+  margin: 5px;
+  display: inline-block;
+}
+
+.element-row .btn-blue-border {
   margin: 5px;
   display: inline-block;
 }
